@@ -44,8 +44,8 @@ class App extends Component {
           <Switch>
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
-            <Route path="/profile" render={props => <Profile {...props} />} />
-            <Route path="/content" component={Content} />
+            {/* <Route path="/profile" render={props => <Profile {...props} />} /> */}
+            {/* <Route path="/content" component={Content} /> */}
             <Route exact path="/" render={() => <Redirect to="/content" />} />
           </Switch>
         </section>
